@@ -75,6 +75,7 @@ function sPlotManager:ListPlayerPlots(player)
 end
 
 function sPlotManager:TeleportToPlot(plotname, player)
+    if not plotname then return end
     local plot = self.plots[plotname:lower()]
 
     if plot then
